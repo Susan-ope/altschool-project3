@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPP Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/wppusher.svg" alt="wppusher"></a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#"  class="account_button">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout_section">
+            <div class="checkout">
+                <h2>Checkout</h2>
+
+                <form action="#" id="checkout_form" aria-labelledby="checkout form">
+                    <div class="basic_info">
+                        <h3><span>1</span> Your Basic Information</h3>
+                        <div class="name">
+                            <p class="first_name">
+                                <label for="first_name">First Name</label>
+                                <input type="text" name="first_name" id="first_name" placeholder="Susan" required>
+                            </p>
+                            <p class="last_name">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" id="last_name" placeholder="Akinmarin" required>
+                            </p>
+                        </div>
+                        <p class="email">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Susanakinmarin@yahoo.com" required>
+                        </p>
+                    </div>
+
+                    <div class="payment_info">
+                        <h3><span>2</span> Your Payment Information</h3>
+    
+                        <div>
+                            <label for="card_details">Credit Card</label>
+                            <p id="card_details">
+                                <input 
+                                minlength="16" 
+                                maxlength="16" 
+                                inputmode="numeric"
+                                autocomplete="cc-number"
+                                type="text"
+                                pattern="[0-9]*"
+                                required
+                                name="card_number" 
+                                id="card_number" 
+                                placeholder="Card Number">
+                                <input minlength="4" maxlength="4" type="text" name="card_expery_date" id="card_expery_date" placeholder="MM/YY" required>
+                                <input minlength="3" maxlength="3" type="text" name="card_cvc" id="card_cvc" placeholder="CVC" required>
+                            </p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="buy_wpp">Buy WP Pusher</button>
+                </form>
+
+                <div class="need_help">
+                    <pre>
+                        <span class="question_mark">?</span> <p><strong>Need any help?</strong> <span>Don't hesitate to <a href="#" class="contact">contact          </a></span><br>support!</p>
+                    </pre>
+                    <img src="images/stripe.svg" alt="powered by stripe">
+                </div>
+            </div>
+
+            <div class="plan_decription" aria-label="plan description">
+                <div class="first_child">
+                    <h4>Freelancer</h4>
+                    <p class="price_tag"><sup>$</sup>99 <sub>/ year</sub></p>
+                    <p>Automatically renews after 1 year</p>
+                </div>
+
+                <div class="second_child">
+                    <p><img src="images/check.png" alt="check icon"> Use on 5 client sites</p>
+                    <p><img src="images/check.png" alt="check icon"> Private repositories</p>
+                    <p><img src="images/check.png" alt="check icon"> Email support</p>
+                </div>
+
+                <p class="third_child">Need <strong>20</strong> client sites? <br> <a href="#"><strong>Switch to the Agency plan.</strong></a></p>
+
+                <div class="fourth_child">
+                    <p>FTP is horrible to deal with. <strong>WP Pusher</strong> solves that issue, and the customer support is awesome!</p>
+
+                    <div>
+                        <img src="images/user.svg" alt=" user">
+                        <p>Kirk Beard</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="terms_of_use">&copy; 2018 WP Pusher IVS  ·  <a href="#">Terms of Service</a></p>
+        </section>
+    </main>
+</body>
+</html>
